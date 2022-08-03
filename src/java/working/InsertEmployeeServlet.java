@@ -18,7 +18,7 @@ import pojo.Employee;
  *
  * @author Mohammmed Sami
  */
-public class InsertEmployee extends HttpServlet {
+public class InsertEmployeeServlet extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

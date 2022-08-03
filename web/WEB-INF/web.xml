@@ -2,11 +2,27 @@
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <servlet>
         <servlet-name>InsertEmployee</servlet-name>
-        <servlet-class>working.InsertEmployee</servlet-class>
+        <servlet-class>working.InsertEmployeeServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateEmployeeServlet</servlet-name>
+        <servlet-class>working.UpdateEmployeeServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SelectEmployeeServlet</servlet-name>
+        <servlet-class>working.SelectEmployeeServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>InsertEmployee</servlet-name>
         <url-pattern>/InsertEmployee</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateEmployeeServlet</servlet-name>
+        <url-pattern>/UpdateEmployeeServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SelectEmployeeServlet</servlet-name>
+        <url-pattern>/SelectEmployeeServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

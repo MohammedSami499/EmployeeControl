@@ -13,30 +13,54 @@
     </head>
     <body>
         <div>
-            
-            <form action="${pageContext.request.contextPath}/InsertEmployee" method="Post">
 
-                <center>
-                    <font size="5" color="${color}">
-                    <p> ${message}</p>
-                    </font>
-                    <font size="3" color="blue">
-                        <h2>Please Insert Your Data Here</h2>
-                        <div>
-                            First Name <input type="text" name="first" /><br/>
-                            Last Name <input type="text" name="last" /><br/>
-                            Position <input type="text" name="position" /><br/>
-                            Salary <input type="text" name="salary" /><br/>
-                            <button type="submit">Add</button>
-                        </div>
-                    
-                    </font>
-                    
-                    
-                </center>
-                
-            </form>
-            
+            <center>
+                <font size="5" color="${color}">
+                <p> ${message}</p>
+                </font>
+                <font size="3" color="black">
+
+                <div>
+                    <table Border="10" Align="center">
+                        <tr><th>Please Insert Your Data Here</th></tr>
+                    </table>
+
+                    <table style="margin-top: 10px" border="10" Align="center">
+
+                        <form action="${pageContext.request.contextPath}/InsertEmployee" method="Post">
+                            <tbody>
+
+                                <tr >
+                                    <td style="font-weight: bold">First Name </td>
+                                    <td><input type="text" name="first" /></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-weight: bold">Last Name </td>
+                                    <td><input type="text" name="last" /></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-weight: bold">Position </td>
+                                    <td><input type="text" name="position" /></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-weight: bold">Salary </td>
+                                    <td><input type="text" name="salary" /></td>
+                                </tr>
+
+                                <tr align="center" >
+                                    <td align="center" ><button type="submit">Insert</button></td>
+                                </tr>
+                            </tbody>
+                        </form>
+                    </table>
+                </div>
+
+                </font>
+
+
+            </center>
+
+
         </div>
     </body>
 </html>

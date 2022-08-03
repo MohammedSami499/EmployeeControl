@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class insert_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class updateEmployee_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -48,10 +48,12 @@ public final class insert_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<html>\n");
       out.write("    <head>\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>Insert Employee</title>\n");
+      out.write("        <title>Update Employee</title>\n");
       out.write("    </head>\n");
       out.write("    <body>\n");
       out.write("        <div>\n");
+      out.write("\n");
+      out.write("\n");
       out.write("\n");
       out.write("            <center>\n");
       out.write("                <font size=\"5\" color=\"");
@@ -65,16 +67,19 @@ public final class insert_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("                <div>\n");
       out.write("                    <table Border=\"10\" Align=\"center\">\n");
-      out.write("                        <tr><th>Please Insert Your Data Here</th></tr>\n");
+      out.write("                        <tr><th>Please Insert Your Data To Be Updated</th></tr>\n");
       out.write("                    </table>\n");
       out.write("\n");
       out.write("                    <table style=\"margin-top: 10px\" border=\"10\" Align=\"center\">\n");
       out.write("\n");
       out.write("                        <form action=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write("/InsertEmployee\" method=\"Post\">\n");
+      out.write("/UpdateEmployeeServlet\" method=\"Post\">\n");
       out.write("                            <tbody>\n");
-      out.write("\n");
+      out.write("                                <tr>\n");
+      out.write("                                    <td style=\"font-weight: bold\">Employee Id</td>\n");
+      out.write("                                    <td> <input type=\"text\" name=\"id\" /></td>\n");
+      out.write("                                </tr>\n");
       out.write("                                <tr >\n");
       out.write("                                    <td style=\"font-weight: bold\">First Name </td>\n");
       out.write("                                    <td><input type=\"text\" name=\"first\" /></td>\n");
@@ -104,6 +109,7 @@ public final class insert_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("            </center>\n");
+      out.write("\n");
       out.write("\n");
       out.write("\n");
       out.write("        </div>\n");
